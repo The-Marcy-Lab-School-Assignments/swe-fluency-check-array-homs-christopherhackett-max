@@ -10,8 +10,10 @@ const sampleWords = ['dog', 'blueberry', 'alabama', 'earth', 'football'];
 
 // Problem 1
 const printEveryWord = (words) => {
+  words.forEach(word => console.log(word))
 
 };
+printEveryWord(sampleWords)
 
 // Problem 2
 const getStringLengths = (strings) => {
