@@ -87,8 +87,9 @@ getActiveUsersUnder30(sampleUsers)
 
 // Problem 9
 const getTotalScore = (users) => {
-
+  console.log(users.reduce((acc, currVal) => acc + currVal.score, 0))
 };
+getTotalScore(sampleUsers)
 
 
 // Problem 10
