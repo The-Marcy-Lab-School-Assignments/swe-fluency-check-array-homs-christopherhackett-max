@@ -73,8 +73,10 @@ printUserNamesAndScores(sampleUsers)
 
 // Problem 7
 const getUserNames = (users) => {
+  console.log(users.map(user => user.name))
 
 };
+getUserNames(sampleUsers)
 
 
 // Problem 8
