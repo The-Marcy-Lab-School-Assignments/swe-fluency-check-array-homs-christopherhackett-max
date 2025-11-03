@@ -24,8 +24,10 @@ getStringLengths(sampleWords)
 
 // Problem 3
 const sortWordsZtoA = (words) => {
+  console.log(words.sort((a, b) => a === b ? 0 : a < b ? 1 : -1))
 
 };
+sortWordsZtoA(sampleWords)
 
 /* -------------------------------------------- */
 /* --------------NUMBER PROBLEMS--------------- */
@@ -35,8 +37,9 @@ const sampleNumbers = [7, 3, 9, 1, 4, 8, 2, 10, 5, 6];
 
 // Problem 4
 const getEvenNumbers = (nums) => {
-
+  console.log(nums.filter(num => num % 2 === 0))
 };
+getEvenNumbers(sampleNumbers)
 
 // Problem 5
 const getLargestNumber = (numbers) => {
