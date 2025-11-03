@@ -43,8 +43,15 @@ getEvenNumbers(sampleNumbers)
 
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+  let largest = -Infinity
+  numbers.find(num => {
+    if (num > largest) {
+      largest = num
+    }
+  })
+  console.log(largest)
 };
+getLargestNumber(sampleNumbers)
 
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
